@@ -1,0 +1,11 @@
+------------------------------
+Factura: F-1
+Fecha: 2025-11-19 01:51:05
+
+Pasajero: Joseph Piterson Henry (703100647)
+Email: josephhenry646@gmail.com
+Vuelo: V-XXX - Costa Rica -> Chile (AV-5371)
+Clase: EJECUTIVA
+Cantidad de asientos: 1
+Precio total: 300.0
+
