@@ -1,5 +1,3 @@
-package com.reservations;
-
 public class Tiquete {
     private Vuelo vuelo;
     private Pasajero pasajero;

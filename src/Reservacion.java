@@ -1,5 +1,3 @@
-package com.reservations;
-
 public class Reservacion {
     public static class Resultado {
         public boolean exito;

@@ -1,5 +1,3 @@
-package com.reservations;
-
 import java.util.ArrayList;
 import java.util.List;
 

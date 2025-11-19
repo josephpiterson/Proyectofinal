@@ -1,5 +1,3 @@
-package com.reservations;
-
 // Clase Pasajero simplificada para principiantes.
 public class Pasajero {
     private String nombre;

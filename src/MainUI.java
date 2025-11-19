@@ -1,9 +1,3 @@
-package com.reservations.Interfaz;
-
-import com.reservations.Avion;
-import com.reservations.Pasajero;
-import com.reservations.Reservacion;
-import com.reservations.Vuelo;
 import java.awt.*;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -138,7 +132,7 @@ public class MainUI extends JFrame {
             JButton b = createSeatButton(id);
             b.setPreferredSize(new Dimension(44, 36));
             b.setMargin(new Insets(2, 2, 2, 2));
-            economicaButtons.add(b);
+            ejecutivaButtons.add(b);
             execPanel.add(b);
         }
 
@@ -193,10 +187,10 @@ public class MainUI extends JFrame {
         }
 
         // Mostrar sólo el destino seleccionado. Si no requiere visa, indicar "No ocupa visa".
-        if (com.reservations.Vuelo.noVisaFor(destino)) {
+        if (Vuelo.noVisaFor(destino)) {
             model.addElement(destino + " (No ocupa visa)");
-        } else if (com.reservations.Vuelo.requiresVisaFor(destino)) {
-            String tipo = com.reservations.Vuelo.getTipoVisaFor(destino);
+        } else if (Vuelo.requiresVisaFor(destino)) {
+            String tipo = Vuelo.getTipoVisaFor(destino);
             if (tipo != null) model.addElement(destino + " (Requiere visa: " + tipo + ")");
             else model.addElement(destino + " (Requiere visa)");
         } else {
@@ -317,7 +311,7 @@ public class MainUI extends JFrame {
                 int p2 = vueloSel.indexOf(')');
                 if (p1>=0 && p2>p1) {
                     String inside = vueloSel.substring(p1+1,p2);
-                    inside = inside.replace("$","").replace(" ","");
+                    inside = inside.replace("$","" ).replace(" ","");
                     precio = Double.parseDouble(inside);
                 }
             } catch (NumberFormatException ex) { /* ignore, usar precio por defecto */ }

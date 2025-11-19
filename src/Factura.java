@@ -1,5 +1,3 @@
-package com.reservations;
-
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
